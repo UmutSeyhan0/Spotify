@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:spotify/common/widgets/button/basic_app_button.dart';
 import 'package:spotify/core/configs/assets/app_images.dart';
+import 'package:spotify/core/configs/assets/app_vectors.dart';
+import 'package:spotify/core/configs/theme/app_colors.dart';
 
 class GetStartedPage extends StatelessWidget {
   const GetStartedPage({super.key});
@@ -10,9 +14,44 @@ class GetStartedPage extends StatelessWidget {
       body: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.fill, image: AssetImage(AppImages.introBG))),
+            padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 40),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.fill,
+                image: AssetImage(AppImages.introBG),
+              ),
+            ),
+            child: Column(
+              children: [
+                Align(
+                  alignment: Alignment.topCenter,
+                  child: SvgPicture.asset(AppVectors.logo),
+                ),
+                const Spacer(),
+                const Text(
+                  'Enjoy Listening To Music',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 18),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                const Text(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc libero nisl, pellentesque in accumsan sed, sagittis vitae tortor. Aliquam porttitor viverra erat, ut molestie metus lacinia vel. ',
+                  style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.grey,
+                      fontSize: 13),
+                  textAlign: TextAlign.center,
+                ),
+                BasicAppButton(
+                  onPressed: () {},
+                  title: 'Get Started',
+                )
+              ],
+            ),
           ),
           Container(
             color: Colors.black.withOpacity(0.15),
