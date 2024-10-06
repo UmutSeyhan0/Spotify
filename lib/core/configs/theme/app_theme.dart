@@ -10,15 +10,15 @@ class AppTheme {
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: Colors.transparent,
-      hintStyle:
-          TextStyle(color: Color(0xff383838), fontWeight: FontWeight.w500),
+      hintStyle: const TextStyle(
+          color: Color(0xff383838), fontWeight: FontWeight.w500),
       contentPadding: const EdgeInsets.all(30),
       border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(color: Colors.white, width: 0.4)),
+          borderSide: const BorderSide(color: Colors.white, width: 0.4)),
       enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(color: Colors.black, width: 0.4)),
+          borderSide: const BorderSide(color: Colors.black, width: 0.4)),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
@@ -41,15 +41,15 @@ class AppTheme {
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: Colors.transparent,
-      hintStyle:
-          TextStyle(color: Color(0xffA7A7A7), fontWeight: FontWeight.w500),
+      hintStyle: const TextStyle(
+          color: Color(0xffA7A7A7), fontWeight: FontWeight.w500),
       contentPadding: const EdgeInsets.all(30),
       border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(color: Colors.white, width: 0.4)),
+          borderSide: const BorderSide(color: Colors.white, width: 0.4)),
       enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(color: Colors.white, width: 0.4)),
+          borderSide: const BorderSide(color: Colors.white, width: 0.4)),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
